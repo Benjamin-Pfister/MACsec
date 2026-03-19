@@ -5,13 +5,13 @@ topology:
       kind: nokia_srlinux
       image: ghcr.io/nokia/srlinux:25.10.2-527-arm64
       type: ixr-x1b
-      license: /Users/pfister/Documents/vscode/containerlab/MACsec_Nokia_PoC/SRL_25.10_license_EXP_2026-08-13.txt
-      startup-config: /Users/pfister/Documents/vscode/containerlab/MACsec_Nokia_PoC/checkpoint-sw1.json
+      license: <your license>.txt
+      startup-config: checkpoint-sw1.json
     sw2:
       kind: nokia_srlinux
       image: ghcr.io/nokia/srlinux:25.10.2-527-arm64
       type: ixr-x1b
-      license: /Users/pfister/Documents/vscode/containerlab/MACsec_Nokia_PoC/SRL_25.10_license_EXP_2026-08-13.txt
-      startup-config: /Users/pfister/Documents/vscode/containerlab/MACsec_Nokia_PoC/checkpoint-sw2.json
+      license: <your license>.txt
+      startup-config: checkpoint-sw2.json
   links:
     - endpoints: ["sw1:ethernet-1/1", "sw2:ethernet-1/1"]
